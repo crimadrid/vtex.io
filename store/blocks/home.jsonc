@@ -1,0 +1,69 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "list-context.image-list#demo"
+      //"flex-layout.row#shelf"     
+   
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "Madrid Store",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 480,
+      "images": [
+        {
+          "image": "https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/landings/2020/electrodomesticos/desktop/01landing-electrdmstcs-desktop-hero.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  }
+
+ /*  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+   "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  }  */
+}
