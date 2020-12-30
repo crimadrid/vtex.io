@@ -2,18 +2,32 @@
   "store.home": { 
     "blocks": [
       "rich-text",
-      "list-context.image-list#demo"
-      //"flex-layout.row#shelf"     
+      "list-context.image-list#demo",
+      "flex-layout.row#shelf"     
    
     ]
   },
   "rich-text": { 
     "props": { 
       "text": "Madrid Store",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
       "font": "t-heading-1"
     }
+  },
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ]
   },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -42,9 +56,9 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
-  }
+  },
 
- /*  "flex-layout.row#shelf": {
+   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
    "list-context.product-list#demo1": {
@@ -65,5 +79,5 @@
       "fullWidth": true,
       "blockClass": "shelf"
     }
-  }  */
+  }  
 }
