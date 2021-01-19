@@ -1,4 +1,4 @@
-{
+/* {
   "store.home": { 
     "blocks": [
       "rich-text",
@@ -80,4 +80,84 @@
       "blockClass": "shelf"
     }
   }  
+} */
+
+{
+  "store.home": {
+    "blocks": [
+      "rich-text", 
+      "info-card#button-right",
+      "flex-layout.row#shelf", 
+      "info-card#button-left"    
+    ]
+  },
+  "rich-text":{
+    "props": {     
+      "text": "Store Madrid",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5"    
+    }
+  },
+  "info-card#button-right":{
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/landings/2020/electrodomesticos/desktop/01landing-electrdmstcs-desktop-hero.jpg",
+      "headline": "Feria de electrodomésticos",
+      "subhead": "Difrútalos ahora!",
+      "callToActionMode": "button",
+      "callToActionText": "Ir",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#button-left":{
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+      "headline": "Feria de electrodomésticos",
+      "subhead": "Difrútalos ahora!",
+      "callToActionMode": "link",
+      "callToActionText": "Ir",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ]
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+   "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  }
 }
