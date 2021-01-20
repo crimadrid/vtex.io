@@ -1,0 +1,24 @@
+.element{
+    padding: 0px 5px;
+}
+.brandName{
+    color: #171717; 
+    /*font-family: Raleway;*/
+    font-size: 18px;
+    font-weight: bold; 
+    overflow: hidden;
+    display: block;
+    text-transform: lowercase;
+} 
+.brandName::first-letter {
+    text-transform: uppercase; 
+}
+.nameContainer{
+    display: block;
+}
+/*todos los detalles de product name excepto pdp*/
+/*
+.productBrand{ 
+    color:green; 
+}
+*/ 
