@@ -85,10 +85,9 @@
 {
   "store.home": {
     "blocks": [
-      "rich-text", 
-      "info-card#button-right",
-      "list-context.product-list#list-home",
-      "info-card#button-left"    
+      "rich-text",   
+      "slider-layout#home",     
+      "list-context.product-list#list-home"       
     ]
   },
   "rich-text":{
@@ -99,6 +98,19 @@
       "font": "t-heading-5"    
     }
   },
+  "slider-layout#home": {
+    "children": ["info-card#button-right","info-card#button-left"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showPaginationDots": "desktopOnly",
+      "showNavigationArrows": "mobileOnly",
+      "blockClass": "carousel"
+    }
+  }, 
   "info-card#button-right":{
     "props": {
       "isFullModeStyle": false,
@@ -116,10 +128,10 @@
     "props": {
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-      "headline": "Feria de electrodomésticos",
-      "subhead": "Difrútalos ahora!",
-      "callToActionMode": "link",
+      "imageUrl": "https://i.pinimg.com/originals/2e/6a/77/2e6a77913878b8cac8225ad880045a1f.jpg",
+      "headline": "Feria de Moda",
+      "subhead": "Estrena ahora!",
+      "callToActionMode": "button",
       "callToActionText": "Ir",
       "callToActionUrl": "/sale/d",
       "textAlignment": "center"
