@@ -1,8 +1,28 @@
-.galleryTitle--layout{
-    margin: 0px;
-    padding: 0px;
-    font-size: 38px;
+.container--layout{
+  flex-flow: row wrap;
 }
+
+.galleryTitle--layout{
+  margin: 0px;  
+  padding: 0px;
+  width: 100%;
+    font-size: 18px;
+}
+.orderBy--layout,
+.totalProducts--layout{
+  width: 100%;
+}
+
+.gallery{
+  order: 3;
+  width: 80%;
+}
+
+.filters--layout{
+  order: 2;
+  width: 200px;
+}
+
 .filterItem{
     font-size: 12px;
     width: 200px;

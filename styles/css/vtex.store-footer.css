@@ -1,6 +1,5 @@
 :global(.vtex-store-footer-2-x-footerLayout),
 .footerLayout{
     background-color: #CCC;
-    margin-top: 10px;
-    box-shadow: 0px -1px 2px #000;
+    box-shadow: 0px -1px 2px #CCC;
 }

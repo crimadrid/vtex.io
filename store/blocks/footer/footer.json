@@ -12,7 +12,6 @@
     "children": [
       "flex-layout.row#footer-1-desktop",      
       "flex-layout.row#footer-2-1-desktop",
-      "flex-layout.row#footer-2-2-desktop",
       "flex-layout.row#footer-2-3-desktop"
     ],
     "props": {
@@ -21,13 +20,13 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#ayuda-desktop",
       "flex-layout.col#content-RedSocial"
     ],
     "props": {
       "blockClass": "footer",
       "paddingTop": 6,
-      "paddingBottom": 3,
+      "paddingBottom": 0,
+      "horizontalAlign": "center",
       "fullWidth": true
     }
   },  
@@ -37,18 +36,8 @@
       "blockClass": "content-redsocial"
     },  
     "children": [
-      "rich-text#Titulo-redsocial",
-      "menu-item#email",
-      "menu-item#telefono",
-      "menu-item#telefonofijo",
       "social-networks"
     ]
-  },
-  "rich-text#Titulo-redsocial": {
-    "props": {
-      "text": "Contactanos",
-      "blockClass": "title-link"
-    }
   },
   "social-networks": {
     "props": {
@@ -77,7 +66,7 @@
     "props": {
       "horizontalAlign": "center",      
       "fullWidth": true,
-      "paddingTop": 6
+      "paddingTop": 0
     },
     "children": [
       "image#footerPagos"
@@ -92,28 +81,12 @@
       "height": 76
     }
   },
-  "flex-layout.row#footer-2-2-desktop": {
-    "props": {
-      "horizontalAlign": "center",
-      "fullWidth": true
-    },
-    "children": [
-      "rich-text#footerCopyright"
-    ]
-  },
-  "rich-text#footerCopyright": {
-    "props": {
-      "text": "© Copyright 2021 MyVtex.com.br. Todos los Derechos Reservados.",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
   "flex-layout.row#footer-2-3-desktop": {
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "fullWidth": true,
-      "paddingBottom": 5
+      "paddingBottom": 0
     },
     "children": [
       "image#footerVtex"
@@ -136,7 +109,6 @@
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-1-desktop",
-      "flex-layout.row#footer-2-2-desktop",
       "flex-layout.row#footer-2-3-desktop"
     ],
     "props": {
