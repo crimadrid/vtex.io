@@ -1,14 +1,14 @@
 {
   "store.home": {
     "blocks": [
-      "slider-layout#home",     
       "rich-text",   
+      "slider-layout#home",     
       "list-context.product-list#list-home"       
     ]
   },
   "rich-text":{
     "props": {     
-      "text": "PRODUCTOS **MÁS BUSCADOS**",
+      "text": "Store Madrid",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-5"    
@@ -83,11 +83,10 @@
   "product-summary.shelf#slider-home": {
     "children": [
       "product-summary-image#shelf",
+      "stack-layout#prodsum",
       "product-summary-name",
-      "product-summary-brand",
-      "product-identifier.product",
-      "flex-layout.row#precio-venta-anterior", 
       "product-summary-space",
+      "flex-layout.row#precio-venta-anterior",      
       "add-to-cart-button"
     ]
   }

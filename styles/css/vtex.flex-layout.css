@@ -1,0 +1,7 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRow--main-header),
+.flexRowContent--main-header,
+.flexRow--main-header{
+    background-color: #FFF;
+    box-shadow: 0 1px 6px #CCC;
+}

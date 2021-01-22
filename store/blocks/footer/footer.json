@@ -1,0 +1,191 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",      
+      "flex-layout.row#footer-2-1-desktop",
+      "flex-layout.row#footer-2-2-desktop",
+      "flex-layout.row#footer-2-3-desktop"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#ayuda-desktop",
+      "flex-layout.col#content-RedSocial"
+    ],
+    "props": {
+      "blockClass": "footer",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "fullWidth": true
+    }
+  },  
+  "flex-layout.col#content-RedSocial": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "content-redsocial"
+    },  
+    "children": [
+      "rich-text#Titulo-redsocial",
+      "menu-item#email",
+      "menu-item#telefono",
+      "menu-item#telefonofijo",
+      "social-networks"
+    ]
+  },
+  "rich-text#Titulo-redsocial": {
+    "props": {
+      "text": "Contactanos",
+      "blockClass": "title-link"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "blockClass": "box-items-redes-sociales",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#footer-2-1-desktop": {
+    "props": {
+      "horizontalAlign": "center",      
+      "fullWidth": true,
+      "paddingTop": 6
+    },
+    "children": [
+      "image#footerPagos"
+    ]
+  },
+  "image#footerPagos": {
+    "props": {
+      "src": "https://www.arpatel.com.ec/wp-content/uploads/2017/12/tarjetas-credito-logos.png",
+      "blockClass": "image-footerPagos",
+      "fullWidth": true,
+      "width": 250,
+      "height": 76
+    }
+  },
+  "flex-layout.row#footer-2-2-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#footerCopyright"
+    ]
+  },
+  "rich-text#footerCopyright": {
+    "props": {
+      "text": "© Copyright 2021 MyVtex.com.br. Todos los Derechos Reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#footer-2-3-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "paddingBottom": 5
+    },
+    "children": [
+      "image#footerVtex"
+    ]
+  },
+  "image#footerVtex": {
+    "props": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/VTEX_Logo.svg",
+      "blockClass": "image-footerVtex",
+      "fullWidth": true,
+      "width": 170,
+      "height": 72,
+      "link":{
+        "url": "https://vtex.com/co-es/",
+        "openNewTab": true
+      }
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-1-desktop",
+      "flex-layout.row#footer-2-2-desktop",
+      "flex-layout.row#footer-2-3-desktop"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "menu-item#email": {
+    "props": {
+      "id": "menu-item-email",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "contacto@correo.com",
+        "text": "contacto@correo.com"
+      }
+    }
+  },
+  "menu-item#telefono": {
+    "props": {
+      "id": "menu-item-telefono",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "+57 3001234567",
+        "text": "+57 3001234567"
+      }
+    }
+  },
+  "menu-item#telefonofijo": {
+    "props": {
+      "id": "menu-item-telefonofijo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#", 
+        "noFollow": false,
+        "tagTitle": "123 4567",
+        "text": "123 4567"
+      }
+    }
+  }
+}

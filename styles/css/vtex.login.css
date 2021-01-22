@@ -1,0 +1,60 @@
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--barHeader)
+  :global(.vtex-button){
+      outline: none;
+
+  }  
+:global(.vtex-flex-layout-0-x-flexRowContent--barHeader)
+  :global(.vtex-button:hover),
+  :global(.vtex-flex-layout-0-x-flexRowContent--barHeader)
+  :global(.vtex-button:focus),
+  :global(.vtex-flex-layout-0-x-flexRowContent--barHeader)
+  :global(.vtex-button:active){
+    background-color: #0A0A0A; 
+  }  
+.contentInitialScreen{
+    opacity: 0.98;
+} 
+
+.contentInitialScreen h3{ 
+    display: none;
+}
+:global(.vtex-login-2-x-label){
+    display: none;
+}
+
+.vtex-login-2-x-button .vtex-button {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: red;
+} 
+.optionsListItemContainer{
+    background-color: red;
+}
+
+
+
+:global(.render-route-store-login)
+:global(.render-provider:before)
+{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.5;        
+}
+
+.optionsSticky {
+    background-color: cornflowerblue;
+    display: none;
+}
+.dontHaveAccount{
+    display: none;
+}

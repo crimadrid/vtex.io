@@ -1,0 +1,57 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+      "props": {
+        "experimentalOptimizeRendering": true
+      },
+      "children": [
+        "menu-item#category-electrodomesticos",
+        "menu-item#category-hogar",
+        "menu-item#category-tegnologia"
+      ]
+    },
+    "menu-item#category-electrodomesticos": {
+      "props": {
+        "id": "menu-item-category-electrodomesticos",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/electrodomesticos/",
+          "noFollow": false,
+          "tagTitle": "electrodomesticos",
+          "text": "Electrodomésticos"
+        }
+      }
+    },
+    "menu-item#category-hogar": {
+      "props": {
+        "id": "menu-item-category-hogar",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/hogar/",
+          "noFollow": false,
+          "tagTitle": "hogar",
+          "text": "Hogar"
+        }
+      }
+    },
+    "menu-item#category-tegnologia": {
+        "props": {
+          "id": "menu-item-category-tegnologia",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/tegnologia/",
+            "noFollow": false,
+            "tagTitle": "tegnologia",
+            "text": "Tegnología"
+          }
+        }
+      }
+  }

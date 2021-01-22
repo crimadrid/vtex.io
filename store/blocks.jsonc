@@ -1,20 +1,26 @@
 {
-    
+    "store.account": {
+        "blocks": [
+            "my-account"
+        ]
+    },    
+    "login": {
+        "props": {
+            "optionsTitle": "",
+            "showIconProfile": true,
+            "defaultOption": "1",
+            "showPasswordVerificationIntoTooltip": true,
+            "emailPraceholder": "ingresa tu correo electrónico",
+            "passwordPlaceholder": "ingresa tu contraseña",
+            "isInitialScreenOptionOnly": false,
+            "logInButtonBehavior": "/login"
+        }
+    },
     "product-price": {
         "props": {
             "showSavings": true,
             "showInstallments": true
         }
-    },
-    "product-summary.shelf": {
-        "children": [
-            "product-summary-name",
-            "product-summary-image#shelf",
-            "stack-layout#prodsum",
-            "product-summary-space",
-            "flex-layout.row#precio-venta-anterior",            
-            "add-to-cart-button"
-        ]
     },
     "product-summary-image#shelf": {
         "props": {

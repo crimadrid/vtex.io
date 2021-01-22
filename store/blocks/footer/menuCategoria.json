@@ -1,0 +1,88 @@
+{
+  "vtex.menu@2.x:menu#Categorias-desktop": {
+    "props": {
+      "orientation": "vertical",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "blockClass": "box-items"
+    },
+    "children": [
+      "flex-layout.row#titulo-categoria",
+      "menu-item#vodka",
+      "menu-item#crema",
+      "menu-item#ginebra",
+      "menu-item#ron"
+    ]
+  },
+  "flex-layout.row#titulo-categoria": {
+    "children": [
+      "rich-text#titulo-categoria"
+    ]
+  },
+  "rich-text#titulo-categoria": {
+    "props": {
+      "text": "Categoría",
+      "blockClass": "title-link"
+    }
+  },
+  "menu-item#vodka": {
+    "props": {
+      "id": "menu-item-vodka",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vodka",
+        "noFollow": false,
+        "tagTitle": "Vodka",
+        "text": "Vodka"
+      }
+    }
+  },
+  "menu-item#crema": {
+    "props": {
+      "id": "menu-item-black-crema",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "crema",
+        "noFollow": false,
+        "tagTitle": "Crema",
+        "text": "Crema"
+      }
+    }
+  },
+  "menu-item#ginebra": {
+    "props": {
+      "id": "menu-item-ginebra",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "ginebra",
+        "noFollow": false,
+        "tagTitle": "Ginebra",
+        "text": "Ginebra"
+      }
+    }
+  },
+  "menu-item#ron": {
+    "props": {
+      "id": "menu-item-ron",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "ron",
+        "noFollow": false,
+        "tagTitle": "Ron",
+        "text": "Ron"
+      }
+    }
+  }
+}
